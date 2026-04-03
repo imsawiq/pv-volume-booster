@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "pv_volume_booster",
+  "version": "${version}",
+  "name": "PV Volume Booster",
+  "description": "Client-side Plasmo Voice volume booster that unlocks higher volume values for players and microphone input.",
+  "authors": [
+    "sawiq_"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/pv-volume-booster",
+    "sources": "https://github.com/imsawiq/pv-volume-booster",
+    "issues": "https://github.com/imsawiq/pv-volume-booster/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/pv_volume_booster/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["org.sawiq.pvboost.PvVolumeBoosterClient"]
+  },
+  "mixins": [
+    "pv_volume_booster.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": ">=1.21 <=26.1.1"
+  }
+}

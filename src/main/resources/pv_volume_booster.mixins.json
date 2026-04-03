@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "org.sawiq.pvboost.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "DoubleConfigEntryAccessor",
+    "VoiceClientConfigVoiceMixin",
+    "SourceLineVolumesMixin",
+    "BaseAlSourceMixin",
+    "BaseClientAudioSourceWriteMixin",
+    "LimiterFilterMixin",
+    "GainFilterMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
